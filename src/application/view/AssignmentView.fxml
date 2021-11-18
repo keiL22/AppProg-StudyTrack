@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AssignmentViewController">
+   <children>
+      <TableView fx:id="assignmentsTabel" editable="true" fixedCellSize="0.0" layoutX="14.0" layoutY="119.0" prefHeight="363.0" prefWidth="573.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="compCol" prefWidth="71.0" text="Completion" />
+            <TableColumn fx:id="nameCol" prefWidth="114.0" text="Assignment Name" />
+            <TableColumn fx:id="dateCol" prefWidth="83.0" text="Due Date" />
+            <TableColumn fx:id="editCol" prefWidth="64.0" text="Edit" />
+         </columns>
+      </TableView>
+      <Label fx:id="courseNameLabel" alignment="CENTER" layoutX="14.0" layoutY="49.0" prefHeight="64.0" prefWidth="573.0" text="COURSE NAME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="504.0" layoutY="9.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="29.0" prefWidth="83.0" text="Back" />
+      <Button fx:id="addBtn" layoutX="504.0" layoutY="519.0" mnemonicParsing="false" onAction="#addPressed" prefHeight="29.0" prefWidth="83.0" text="Add " />
+      <HBox layoutX="22.0" layoutY="519.0" prefHeight="29.0" prefWidth="461.0">
+         <children>
+            <TextField fx:id="nameAdd" prefHeight="30.0" prefWidth="179.0" promptText="Assignment Name" />
+            <DatePicker fx:id="dateAdd" prefHeight="29.0" prefWidth="201.0" promptText="Due Date">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+   </children>
+</Pane>
