@@ -72,7 +72,7 @@ public class AssignmentViewController {
             private final Button deleteButton = new Button("Delete");
             private final Button beginButton = new Button("Start");
             private final HBox buttons = new HBox(deleteButton, beginButton);
-            buttons.setSpacing(10);
+            //buttons.setSpacing(10);
 
             @Override
             protected void updateItem(Assignment assign, boolean empty) {
