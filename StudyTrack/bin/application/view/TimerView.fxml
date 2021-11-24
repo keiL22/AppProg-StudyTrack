@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.TimerController">
+   <children>
+      <GridPane prefHeight="488.0" prefWidth="822.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="405.4049072265625" minWidth="10.0" prefWidth="98.6067123413086" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="739.2460861206055" minWidth="10.0" prefWidth="723.3932876586914" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #65CDD5;">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="playImage" fitHeight="57.0" fitWidth="65.0" layoutX="17.0" layoutY="216.0" onMouseClicked="#play">
+                           <image>
+                              <Image url="@../../../bin/data/play-button.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children></StackPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0096AE;" GridPane.columnIndex="1">
+               <children>
+                  <GridPane layoutX="156.0" layoutY="172.0" prefHeight="488.0" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="395.8160705566406" minHeight="10.0" prefHeight="387.4234313964844" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="144.8038330078125" minHeight="10.0" prefHeight="95.57656860351562" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="timer" layoutX="238.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25:00">
+                                 <font>
+                                    <Font name="Lato Light" size="96.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <Button layoutX="628.0" layoutY="51.0" mnemonicParsing="false" onAction="#finish" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: black;" text="Finish" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato Semibold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

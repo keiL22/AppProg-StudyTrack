@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="822.0" style="-fx-background-color: #8B9A54;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BreakController">
+   <children>
+      <Text fx:id="timer" layoutX="301.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05:00">
+         <font>
+            <Font name="Lato Light" size="96.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="331.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BREAK">
+         <font>
+            <Font name="Lato Light" size="55.0" />
+         </font>
+      </Text>
+      <Button alignment="CENTER" layoutX="14.0" layoutY="437.0" mnemonicParsing="false" onAction="#home" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: #678118;" text="HOME" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="680.0" layoutY="437.0" mnemonicParsing="false" onAction="#assignment" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: #678118;" text="Assignments" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
