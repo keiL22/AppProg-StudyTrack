@@ -42,7 +42,7 @@ public class TimerController {
     //method that starts the timer upon clicking the play button
     @FXML
     void play(MouseEvent event) {
- 
+ 	playImage.setVisible(false);
         Timer myTimer = new Timer();
         TimerTask timerTask = new TimerTask() {
         	@Override
