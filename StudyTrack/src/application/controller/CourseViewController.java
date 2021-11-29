@@ -361,7 +361,8 @@ public class CourseViewController {
             courseIDS.get(tempCourseNum).setOpacity(1);
             courses.get(tempCourseNum).setCourseName(input.getText().toString());
             Course toAdd = new Course(tempCourseNum, input.getText().toString());
-            courses.set(tempCourseNum, toAdd);    
+            courses.set(tempCourseNum, toAdd); 
+	    initialize();
         }
         else 
         {
