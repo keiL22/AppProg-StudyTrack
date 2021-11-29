@@ -1,7 +1,7 @@
 # StudyTrack
 
-Java Wizards
-Stran Dutton, Mayank Gohil (Leader), Keisuke Lester, Jordan Lott, Anthony Martinez
+Group Name: Java Wizards
+Group Members: Stran Dutton, Mayank Gohil (Leader), Keisuke Lester, Jordan Lott, Anthony Martinez
 
 
 A task manager that allows you to track your courses and assignments. With this management, you’re able to use the app's timer system to focus on an assignment you want and take a break when needed.
