@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="822.0" style="-fx-background-color: #0a9396;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AssignmentViewController">
+	<children>
+		<TableView fx:id="assignmentsTabel" editable="true" fixedCellSize="0.0" layoutX="58.0" layoutY="60.0" prefHeight="364.0" prefWidth="707.0" style="-fx-background-color: #94d2bd;">
+			<columnResizePolicy>
+				<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+			</columnResizePolicy>
+			<columns>
+				<TableColumn fx:id="compCol" prefWidth="71.0" text="Completion" />
+				<TableColumn fx:id="nameCol" prefWidth="175.99996948242188" text="Assignment Name" />
+				<TableColumn fx:id="dateCol" prefWidth="177.0" text="Due Date" />
+				<TableColumn fx:id="editCol" prefWidth="64.0" text="Edit" />
+			</columns>
+		</TableView>
+		<Label fx:id="courseNameLabel" alignment="CENTER" layoutX="161.0" layoutY="-3.0" prefHeight="62.0" prefWidth="497.0" text="COURSE NAME" textAlignment="CENTER">
+			<font>
+				<Font name="System Bold" size="30.0" />
+			</font>
+		</Label>
+		<Button fx:id="backBtn" layoutX="733.0" layoutY="8.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+		<Button fx:id="addBtn" layoutX="646.0" layoutY="434.0" mnemonicParsing="false" onAction="#addPressed" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: black;" text="Add " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+		<HBox layoutX="22.0" layoutY="519.0" prefHeight="29.0" prefWidth="461.0" />
+				<TextField fx:id="nameAdd" layoutX="144.0" layoutY="437.0" prefHeight="30.0" prefWidth="179.0" promptText="Assignment Name">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+				<DatePicker fx:id="dateAdd" layoutX="381.0" layoutY="435.0" prefHeight="29.0" prefWidth="201.0" promptText="Due Date" />
+	</children>
+</Pane>
