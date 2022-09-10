@@ -19,7 +19,5 @@
 ------
 `ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs : Stran Dutton, Mayank Gohil [Leader], Keisuke Lester, Jordan Lott, Anthony Martinez`
 
-
-
     Bug Report:        
     * Timer starts going down quickly after multiple clicks. 
